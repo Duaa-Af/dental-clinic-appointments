@@ -43,7 +43,7 @@ const Appointments = () => {
   const [targetDelAppo, setTargetAppo] = useState({});
 
   useEffect(() => {
-    let dateAppointments = getAppointmentsByDate(new Date());
+    let dateAppointments = getAppointmentsByDate(appointmentsDate);
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAppoints([...dateAppointments]);
   }, [appointments, getAppointmentsByDate]);
