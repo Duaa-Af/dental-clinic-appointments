@@ -1,0 +1,27 @@
+.add-form-container>form {
+    display: block;
+    width: fit-content;
+}
+
+
+/** Start Media **/
+
+@media (max-width: 576px) {
+    .add-form-container>form {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1180px) {
+    .add-form-container .choose-add-patient .matched-patient-list {
+        width: 60vw;
+        margin: 0px auto 15px;
+    }
+    .add-form-container>form {
+        width: 60vw;
+        margin: 0px auto;
+    }
+}
+
+
+/** End Media **/

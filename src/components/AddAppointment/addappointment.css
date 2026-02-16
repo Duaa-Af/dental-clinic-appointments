@@ -1,0 +1,73 @@
+.add-form-container>form {
+    display: block;
+    width: fit-content;
+}
+
+.add-form-container>form .main-btn {
+    display: block;
+    margin-left: auto;
+}
+
+.add-form-container .choose-add-patient .matched-patient-list {
+    box-shadow: 0px 0px 5px 0px var(--shadow-color);
+    width: fit-content;
+    max-height: 35vh;
+    width: 25vw;
+    overflow-y: auto;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-bottom: 15px;
+    list-style: none;
+}
+
+.add-form-container .choose-add-patient .matched-patient-list>li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 12px 15px;
+    cursor: pointer;
+    transition: all var(--trans-duration) ease-in-out;
+    -webkit-transition: all var(--trans-duration) ease-in-out;
+    -moz-transition: all var(--trans-duration) ease-in-out;
+    -ms-transition: all var(--trans-duration) ease-in-out;
+    -o-transition: all var(--trans-duration) ease-in-out;
+}
+
+.add-form-container .choose-add-patient .matched-patient-list>li:hover {
+    background-color: var(--primary-color);
+    color: var(--main-bg-color);
+}
+
+.add-form-container .choose-add-patient .main-btn {
+    display: block;
+    margin-bottom: 30px;
+    width: fit-content;
+}
+
+
+/** Start Media **/
+
+@media (max-width: 576px) {
+    .add-form-container>form {
+        width: 100%;
+    }
+    .add-form-container .choose-add-patient .matched-patient-list {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1180px) {
+    .add-form-container .choose-add-patient .matched-patient-list {
+        width: 60vw;
+    }
+    .add-form-container>form {
+        width: 60vw;
+    }
+}
+
+
+/** End Media **/

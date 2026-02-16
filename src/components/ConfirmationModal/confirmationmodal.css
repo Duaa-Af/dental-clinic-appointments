@@ -1,0 +1,43 @@
+.confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--overlay-color);
+}
+
+.confirmation-modal .main-container {
+    height: 100%;
+}
+
+.confirmation-modal .modal-dialog {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-modal .modal-dialog .modal-content {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px 30px 10px 30px;
+    text-align: center;
+    background-color: var(--main-bg-color);
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin: auto;
+}
+
+.confirmation-modal .modal-dialog .modal-content .modal-footer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.confirmation-modal .modal-dialog .modal-content .modal-footer .btn-cancel {
+    margin-right: 8px;
+}

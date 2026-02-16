@@ -1,0 +1,116 @@
+.appointments-card {
+    height: 90vh;
+}
+
+.appointments-card .appointments-card-header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: var(--main-bg-color);
+    padding: 15px 25px 0px;
+}
+
+.appointments-card .appointments-card-header .react-datepicker-wrapper {
+    margin-left: auto;
+    width: fit-content;
+}
+
+.appointments-card .appointments-card-header>ul {
+    display: flex;
+    list-style: none;
+}
+
+.appointments-card .appointments-card-header>ul>li {
+    padding-top: 15px;
+}
+
+.appointments-card .appointments-card-header>ul>li>a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 15px 15px;
+    border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -ms-border-radius: 10px 10px 0px 0px;
+    -o-border-radius: 10px 10px 0px 0px;
+    transition: all var(--trans-duration) ease-in-out;
+    -webkit-transition: all var(--trans-duration) ease-in-out;
+    -moz-transition: all var(--trans-duration) ease-in-out;
+    -ms-transition: all var(--trans-duration) ease-in-out;
+    -o-transition: all var(--trans-duration) ease-in-out;
+    cursor: pointer;
+}
+
+.appointments-card .appointments-card-header>ul>li>a:hover {
+    background-color: var(--borders-color);
+    color: var(--primary-color);
+}
+
+.appointments-card .appointments-card-header>ul>li>a.active {
+    background-color: var(--main-bg-color);
+    color: var(--primary-color);
+}
+
+.appointments-card .appointments-card-header .main-input {
+    color: var(--main-bg-color);
+}
+
+.appointments-card .appointments-card-header .main-input:focus {
+    border: 2px solid var(--main-bg-color);
+}
+
+.appointments-card .appointments-card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: scroll;
+    max-height: 80vh;
+    gap: 10px;
+    padding: 20px 15px;
+}
+
+
+/*** Start Media ***/
+
+@media (max-width: 576px) {
+    .appointments-card {
+        height: 75vh;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .appointments-card .appointments-card-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column-reverse;
+        padding: 12px 10px 0px;
+    }
+    .appointments-card .appointments-card-header .react-datepicker-wrapper {
+        margin-left: 0px;
+    }
+    .appointments-card .appointments-card-header .main-input {
+        width: fit-content;
+    }
+    .appointments-card .appointments-card-body {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        padding: 20px 0px;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 912px) {
+    .appointments-card .appointments-card-body {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 913px) and (max-width: 1180px) {
+    .appointments-card .appointments-card-body {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+}
+
+
+/*** End Media ***/

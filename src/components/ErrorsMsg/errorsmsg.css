@@ -1,0 +1,39 @@
+.errors-container {
+    box-shadow: 0px 0px 5px 0px var(--shadow-color);
+    width: fit-content;
+    width: 25vw;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.errors-container .errors {
+    list-style: none;
+}
+
+.errors-container .errors>li {
+    padding: 12px 15px;
+    color: var(--danger-color);
+}
+
+
+/** Start Media **/
+
+@media (max-width: 576px) {
+    .errors-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 1180px) {
+    .errors-container {
+        width: 60vw;
+        margin: 0px auto 15px;
+    }
+}
+
+
+/** End Media **/
